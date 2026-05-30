@@ -1,0 +1,30 @@
+.review-modal {
+  max-width: 480px;
+}
+
+.review-provider-name {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.review-provider-name strong {
+  color: var(--text-primary);
+}
+
+.review-rating-section {
+  margin-bottom: 20px;
+}
+
+.review-rating-section label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.review-rating-section .star-rating {
+  gap: 6px;
+}

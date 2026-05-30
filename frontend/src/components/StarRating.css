@@ -1,0 +1,35 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-btn {
+  background: transparent;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-fast);
+  border-radius: 2px;
+}
+
+.star-btn:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.star-rating.interactive .star-btn {
+  cursor: pointer;
+}
+
+.star-rating.interactive .star-btn:hover {
+  transform: scale(1.2);
+}
+
+.star-value {
+  margin-left: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--star-gold);
+}
