@@ -17,9 +17,8 @@ connectDB();
 const app = express();
 
 // Middleware
-// Allow both local frontend and deployed Vercel frontend
 app.use(cors({
-  origin: ['http://localhost:5173', process.env.FRONTEND_URL || '*'],
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
