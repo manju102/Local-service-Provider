@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = 'https://local-service-provider-jade.vercel.app/api';
 
 const getHeaders = () => {
   const headers = { 'Content-Type': 'application/json' };
