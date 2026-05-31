@@ -1,4 +1,6 @@
-const API_BASE = 'https://local-service-provider-jade.vercel.app/api';
+const API_BASE = import.meta.env.MODE === 'development' 
+  ? 'http://localhost:5000/api' 
+  : 'https://local-service-provider-jade.vercel.app/api';
 
 const getHeaders = () => {
   const headers = { 'Content-Type': 'application/json' };
